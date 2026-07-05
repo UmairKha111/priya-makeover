@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif-luxury: "Cormorant Garamond", serif;
+  --font-display: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+  
+  --color-luxury-white: #FAFAFA;
+  --color-rose-gold: #D4AF8C;
+  --color-gold: #C9A227;
+  --color-deep-black: #121212;
+  --color-soft-beige: #F7F2EC;
+  --color-dark-gray: #3A3A3A;
+  
+  --color-luxury-pink: #E8A8B3;
+  --color-vibrant-pink: #D33F6E;
+  --color-blush-pink: #FDF2F4;
+}
+
+/* Custom Selection & Smooth Physics */
+::selection {
+  background-color: var(--color-rose-gold);
+  color: #121212;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #F7F2EC;
+  color: #121212;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #F7F2EC;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar for Luxury Aesthetics */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F7F2EC;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D4AF8C;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B99572;
+}
+
+/* Glassmorphism custom helpers */
+.glass-panel {
+  background: rgba(250, 250, 250, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.glass-panel-dark {
+  background: rgba(18, 18, 18, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* Golden Gradient Accent */
+.gold-gradient {
+  background: linear-gradient(135deg, #D4AF8C 0%, #C9A227 50%, #B99572 100%);
+}
+
+.gold-text-gradient {
+  background: linear-gradient(135deg, #D4AF8C 0%, #C9A227 50%, #B99572 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Luxury Pink Gradient */
+.pink-gradient {
+  background: linear-gradient(135deg, #E8A8B3 0%, #D33F6E 50%, #F472B6 100%);
+}
+
+.pink-text-gradient {
+  background: linear-gradient(135deg, #E8A8B3 0%, #D33F6E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Instagram-style Ring Gradient */
+.ig-ring-gradient {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+/* Image zoom effect */
+.image-zoom-container:hover img {
+  transform: scale(1.05);
+}
+
+.image-zoom-container img {
+  transition: transform 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+}
