@@ -63,12 +63,60 @@ export const GALLERY_IMAGES: GalleryItem[] = [
     category: "party",
     image: "https://i.ibb.co/V0J5ZzV9/bf159db3-3de0-4ab8-87eb-801a1536e1e9.png"
   },
-  {
+   {
     id: "g8",
+    title: "Classic Royal Bridal Look",
+    category: "bridal",
+    image: "https://i.ibb.co/HD515Rvq/IMG-0339-JPG.jpg" 
+  },
+  {
+    id: "g9",
     title: "Minimalist Pastel Bridal Look",
     category: "bridal",
     image: "https://i.ibb.co/ZpVc8W4H/b030576e-a6d4-4976-aa05-76f0b279e053.png"
-  }
+  },
+  {
+  id: "g10",
+  title: "Golden Engagement Glow",
+  category: "engagement",
+  image: "https://i.ibb.co/ymMXk8JK/IMG-5630-JPG.jpg"  
+},
+{
+  id: "g11",
+  title: "Luxury Reception Glam",
+  category: "reception",
+  image: "https://i.ibb.co/PGGcsBjb/IMG-4798-JPG.jpg"
+},
+{
+  id: "g12",
+  title: "Elegant Cocktail Party Makeup",
+  category: "party",
+  image: "https://i.ibb.co/HLvynM4N/39def8e4-1a9a-40d0-a65c-c29b423608b1.png"
+},
+{
+  id: "g13",
+  title: "Modern Couture Fashion Beauty",
+  category: "fashion",
+  image: "https://i.ibb.co/vxdRdcFt/IMG-6243-JPG.jpg" 
+},
+{
+  id: "g14",
+  title: "Luxury Editorial Beauty Portrait",
+  category: "editorial",
+  image: "https://i.ibb.co/pj9K7DKj/IMG-3168-JPG.jpg" 
+},
+{
+  id: "g15",
+  title: "Traditional Royal Bridal Elegance",
+  category: "bridal",
+  image: "https://i.ibb.co/60MjG4Lj/IMG-5310-JPG.jpg" 
+},
+{
+  id: "g16",
+  title: "Classic Red Lehenga Bridal Look",
+  category: "bridal",
+  image: "https://i.ibb.co/hxpQBcwv/IMG-4922-JPG.jpg" 
+}
 ];
 
 export const SERVICES_DATA: ServiceItem[] = [
