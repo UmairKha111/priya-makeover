@@ -249,6 +249,13 @@ export const BEFORE_AFTER_DATA: BeforeAfterItem[] = [
     beforeImage: "https://i.ibb.co/V08DdSJP/8d61cd6e-9da4-4004-bdc4-1b6a7593c0d5.png",
     afterImage: "https://i.ibb.co/NnHbxdjH/1febed8f-317b-4fa7-9097-2f5f4094e627.png" ,
     description: "Correcting uneven skin tones and emphasizing eye symmetry. Created a luminous, classic luxury pink look for a grand royal wedding."
+  },
+   {
+    id: "ba1",
+    title: "Minimalist Royal Transformation",
+    beforeImage: "https://i.ibb.co/FqHGPqF7/IMG-6633.jpg",
+    afterImage: "https://i.ibb.co/20mvLg9T/Whats-App-Image-2026-07-07-at-4-21-58-PM.jpgg" ,
+    description: "Correcting uneven skin tones and emphasizing eye symmetry. Created a luminous, classic luxury pink look for a grand royal wedding."
   }
 ];
 

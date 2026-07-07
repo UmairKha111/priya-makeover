@@ -66,7 +66,7 @@ export default function Hero({ onPageChange }: HeroProps) {
           >
             <Sparkles size={12} className="text-vibrant-pink animate-spin" style={{ animationDuration: '4s' }} />
             <span className="text-[10px] font-sans font-medium uppercase tracking-[0.25em] text-vibrant-pink">
-              Delhi NCR &bull; Travel Globally 🌍
+            Noida Delhi NCR &bull; Travel Globally 🌍
             </span>
           </motion.div>
 

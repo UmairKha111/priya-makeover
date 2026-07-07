@@ -2,7 +2,7 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  */
-
+ 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import LoadingScreen from "./components/LoadingScreen";
@@ -10,7 +10,7 @@ import Navbar from "./components/Navbar";
 import FloatingWhatsApp from "./components/FloatingWhatsApp";
 import ScrollToTop from "./components/ScrollToTop";
 import Footer from "./components/Footer";
-
+ 
 // Page/Section imports
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -21,44 +21,36 @@ import BookingProcess from "./components/BookingProcess";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import FAQ from "./components/FAQ";
-
-// Assets / Metadata
+ 
 import { IMAGES } from "./data";
-import { Sparkles, ArrowRight, BookOpen } from "lucide-react";
-
+import { ArrowRight } from "lucide-react";
+ 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState("home");
-
-  // Keep page alignment in sync
+ 
   useEffect(() => {
     if (!isLoading) {
       window.scrollTo({ top: 0, behavior: "instant" as ScrollBehavior });
     }
   }, [currentPage, isLoading]);
-
+ 
   const handlePageChange = (pageId: string) => {
     setCurrentPage(pageId);
   };
-
-  // Simulated 404 handler for invalid states
-  const handleGoHome = () => {
-    setCurrentPage("home");
-  };
-
+ 
+  const handleGoHome = () => setCurrentPage("home");
+ 
   const renderPageContent = () => {
     switch (currentPage) {
       case "home":
         return (
           <div key="home-page" className="space-y-0">
-            {/* 1. Main Hero Block */}
             <Hero onPageChange={handlePageChange} />
-
-            {/* 2. Story Teaser / About Preview */}
+ 
+            {/* About Teaser */}
             <section id="about-teaser-section" className="py-24 bg-soft-beige relative">
               <div className="max-w-7xl mx-auto px-6 sm:px-12 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
-                
-                {/* Visual Image half */}
                 <div className="lg:col-span-5 relative group">
                   <div className="absolute top-4 -left-4 w-full h-full border border-rose-gold/20 pointer-events-none rounded-none translate-x-2 translate-y-2" />
                   <div className="relative aspect-[3/4] overflow-hidden shadow-xl bg-white">
@@ -70,8 +62,6 @@ export default function App() {
                     />
                   </div>
                 </div>
-
-                {/* Literary Copy half */}
                 <div className="lg:col-span-7 space-y-6">
                   <span className="text-[10px] uppercase tracking-[0.3em] text-rose-gold font-bold">
                     The Artist Narrative
@@ -96,33 +86,22 @@ export default function App() {
                     </button>
                   </div>
                 </div>
-
               </div>
             </section>
-
-            {/* 3. Immersive Services list */}
+ 
             <Services onPageChange={handlePageChange} />
-
-            {/* 4. Interactive Transformation slider */}
             <BeforeAfter />
-
-            {/* 5. Filterable Portfolio Masonry with Lightbox */}
-            <Portfolio />
-
-            {/* 6. Royal Testimonials & Verified Google Badges */}
+ 
+            {/* ✅ Home par sirf 8 images + "Explore Full Portfolio" button */}
+            <Portfolio onPageChange={handlePageChange} limit={8} />
+ 
             <Testimonials />
-
-            {/* 7. Client timeline flow */}
             <BookingProcess onPageChange={handlePageChange} />
-
-            {/* 8. Frequently Asked Questions */}
             <FAQ />
-
-            {/* 9. Booking Inquiry Form */}
             <Contact />
           </div>
         );
-
+ 
       case "about":
         return (
           <div key="about-page">
@@ -131,7 +110,7 @@ export default function App() {
             <FAQ />
           </div>
         );
-
+ 
       case "services":
         return (
           <div key="services-page">
@@ -140,14 +119,15 @@ export default function App() {
             <FAQ />
           </div>
         );
-
+ 
       case "portfolio":
         return (
           <div key="portfolio-page">
+            {/* ✅ Full portfolio — no limit, category filter dikhega */}
             <Portfolio />
           </div>
         );
-
+ 
       case "testimonials":
         return (
           <div key="testimonials-page">
@@ -155,7 +135,7 @@ export default function App() {
             <BeforeAfter />
           </div>
         );
-
+ 
       case "contact":
         return (
           <div key="contact-page">
@@ -163,9 +143,8 @@ export default function App() {
             <FAQ />
           </div>
         );
-
+ 
       default:
-        // 404 Fallback view
         return (
           <div key="404-page" className="min-h-[80vh] flex flex-col items-center justify-center text-center px-6 bg-luxury-white">
             <span className="text-[10px] uppercase tracking-[0.3em] text-rose-gold font-bold">
@@ -179,7 +158,7 @@ export default function App() {
             </p>
             <button
               onClick={handleGoHome}
-              className="px-8 py-3.5 bg-deep-black text-luxury-white text-xs font-semibold uppercase tracking-widest hover:bg-rose-gold hover:text-deep-black transition-colors rounded-none"
+              className="px-8 py-3.5 bg-deep-black text-white text-xs font-semibold uppercase tracking-widest hover:bg-rose-gold hover:text-deep-black transition-colors rounded-none"
             >
               Return to Gallery
             </button>
@@ -187,7 +166,7 @@ export default function App() {
         );
     }
   };
-
+ 
   return (
     <>
       <AnimatePresence mode="wait">
@@ -195,11 +174,7 @@ export default function App() {
           <LoadingScreen key="loader" onComplete={() => setIsLoading(false)} />
         ) : (
           <div className="bg-soft-beige flex flex-col min-h-screen relative font-sans text-deep-black">
-            
-            {/* Floating Global Navbar header */}
             <Navbar currentPage={currentPage} onPageChange={handlePageChange} />
-
-            {/* Immersive Page Transitions block */}
             <main className="flex-grow pt-20">
               <AnimatePresence mode="wait">
                 <motion.div
@@ -213,14 +188,9 @@ export default function App() {
                 </motion.div>
               </AnimatePresence>
             </main>
-
-            {/* Premium action helpers */}
             <FloatingWhatsApp />
             <ScrollToTop />
-
-            {/* Global Footer anchor */}
             <Footer onPageChange={handlePageChange} />
-
           </div>
         )}
       </AnimatePresence>

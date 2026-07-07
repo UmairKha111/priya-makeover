@@ -166,7 +166,7 @@ export default function Navbar({ currentPage, onPageChange }: NavbarProps) {
 
             <div className="relative z-10 flex flex-col items-center space-y-6 mb-8 text-center border-t border-luxury-white/10 pt-8">
               <span className="text-[10px] uppercase tracking-[0.3em] text-vibrant-pink">
-                Delhi NCR, India &bull; Available Globally
+               Noida Delhi NCR, India &bull; Available Globally
               </span>
               <button
                 id="mobile-menu-cta"
