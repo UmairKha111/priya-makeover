@@ -108,7 +108,7 @@ export default function Footer({ onPageChange }: FooterProps) {
               <li className="flex items-start space-x-3.5 font-sans">
                 <MapPin size={14} className="text-vibrant-pink shrink-0 mt-0.5" />
                 <span className="text-xs text-luxury-white/60 leading-relaxed font-light">
-                  Noida, Delhi NCR, India &bull; Global Availability
+                Sector 41 Noida 201303, Delhi NCR, India &bull; Global Availability
                 </span>
               </li>
               <li className="flex items-center space-x-3.5 font-sans">

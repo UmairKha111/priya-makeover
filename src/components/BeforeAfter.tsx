@@ -55,7 +55,6 @@ function SliderItem({ item }: { item: typeof BEFORE_AFTER_DATA[0] }) {
  
   return (
     <div className="flex flex-col gap-4">
-      {/* Slider title */}
       <div className="text-center">
         <span className="text-[9px] uppercase tracking-[0.2em] text-rose-gold font-bold flex items-center justify-center gap-1.5">
           <Sparkles size={10} />
@@ -63,13 +62,11 @@ function SliderItem({ item }: { item: typeof BEFORE_AFTER_DATA[0] }) {
         </span>
       </div>
  
-      {/* Slider box */}
       <div
         ref={containerRef}
         onPointerDown={handlePointerDown}
         className="relative w-full aspect-[3/4] overflow-hidden shadow-xl cursor-ew-resize select-none border border-rose-gold/10 bg-white rounded-xl"
       >
-        {/* Before Image */}
         <img
           src={item.beforeImage}
           alt="Before"
@@ -80,7 +77,6 @@ function SliderItem({ item }: { item: typeof BEFORE_AFTER_DATA[0] }) {
           Before
         </div>
  
-        {/* After Image */}
         <div
           className="absolute inset-0 overflow-hidden"
           style={{ clipPath: `polygon(0 0, ${sliderPosition}% 0, ${sliderPosition}% 100%, 0 100%)` }}
@@ -96,7 +92,6 @@ function SliderItem({ item }: { item: typeof BEFORE_AFTER_DATA[0] }) {
           </div>
         </div>
  
-        {/* Divider line + handle */}
         <div
           className="absolute inset-y-0 z-30 w-[2px] bg-rose-gold"
           style={{ left: `${sliderPosition}%`, transform: "translateX(-50%)" }}
@@ -107,7 +102,6 @@ function SliderItem({ item }: { item: typeof BEFORE_AFTER_DATA[0] }) {
         </div>
       </div>
  
-      {/* Slide hint */}
       <div className="flex items-center justify-center gap-1.5 text-[10px] text-rose-gold">
         <ArrowLeftRight size={12} className="animate-pulse" />
         <span>Slide to compare</span>
@@ -116,17 +110,35 @@ function SliderItem({ item }: { item: typeof BEFORE_AFTER_DATA[0] }) {
   );
 }
  
+// ✅ Categories with labels
+const CATEGORIES = [
+  { id: "bridal",     label: "Bridal" },
+  { id: "engagement", label: "Engagement" },
+  { id: "party",      label: "Party" },
+  { id: "reception",  label: "Reception" },
+];
+ 
 export default function BeforeAfter() {
-  // Show first 2 items side by side, fallback to duplicate if only 1
-  const item1 = BEFORE_AFTER_DATA[0];
-  const item2 = BEFORE_AFTER_DATA[1] || BEFORE_AFTER_DATA[0];
+  const [activeCategory, setActiveCategory] = useState("bridal");
+ 
+  // Filter items by selected category
+  const filtered = BEFORE_AFTER_DATA.filter(
+    (item: any) => item.category === activeCategory
+  );
+ 
+  // If no items in this category show a placeholder message
+  const hasItems = filtered.length > 0;
+ 
+  // Show max 2 sliders side by side
+  const item1 = filtered[0];
+  const item2 = filtered[1];
  
   return (
     <section id="before-after-section" className="py-24 bg-soft-beige relative">
       <div className="max-w-7xl mx-auto px-6 sm:px-12 relative z-10">
  
         {/* Heading */}
-        <div className="text-center max-w-xl mx-auto mb-16">
+        <div className="text-center max-w-xl mx-auto mb-12">
           <span className="text-[10px] uppercase tracking-[0.3em] text-rose-gold font-bold">
             Flawless Transformations
           </span>
@@ -139,13 +151,42 @@ export default function BeforeAfter() {
           </p>
         </div>
  
-        {/* ✅ 2 sliders side by side */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <SliderItem item={item1} />
-          <SliderItem item={item2} />
+        {/* ✅ Category Tabs */}
+        <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-12">
+          {CATEGORIES.map((cat) => (
+            <button
+              key={cat.id}
+              onClick={() => setActiveCategory(cat.id)}
+              className={`px-5 sm:px-7 py-2.5 text-[10px] sm:text-xs uppercase tracking-widest font-semibold transition-all duration-300 border cursor-pointer ${
+                activeCategory === cat.id
+                  ? "bg-deep-black text-white border-deep-black"
+                  : "bg-white text-dark-gray border-rose-gold/20 hover:border-rose-gold hover:text-rose-gold"
+              }`}
+            >
+              {cat.label}
+            </button>
+          ))}
         </div>
  
-        {/* Bottom info strip */}
+        {/* ✅ Sliders or empty state */}
+        {hasItems ? (
+          <div className={`grid gap-8 max-w-4xl mx-auto ${item2 ? 'grid-cols-1 sm:grid-cols-2' : 'grid-cols-1 max-w-sm'}`}>
+            {item1 && <SliderItem item={item1} />}
+            {item2 && <SliderItem item={item2} />}
+          </div>
+        ) : (
+          <div className="text-center py-16 text-dark-gray/40">
+            <Sparkles size={32} className="mx-auto mb-4 text-rose-gold/30" />
+            <p className="text-sm font-serif-luxury">
+              {activeCategory.charAt(0).toUpperCase() + activeCategory.slice(1)} transformations coming soon...
+            </p>
+            <p className="text-xs mt-2 font-sans">
+              Add images to <code className="bg-soft-beige px-1">BEFORE_AFTER_DATA</code> with <code className="bg-soft-beige px-1">category: "{activeCategory}"</code>
+            </p>
+          </div>
+        )}
+ 
+        {/* Bottom info */}
         <div className="mt-12 p-5 border-l-2 border-rose-gold bg-white/50 max-w-2xl mx-auto">
           <h4 className="text-xs font-semibold uppercase mb-3">Specialized Care Included:</h4>
           <ul className="grid grid-cols-2 gap-1.5 text-xs text-dark-gray">

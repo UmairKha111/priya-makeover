@@ -111,7 +111,7 @@ export default function About({ onPageChange }: AboutProps) {
                 A Legacy of Artistry, Flawless Finishes, and Empowering Education
               </h3>
               <p className="text-xs sm:text-sm text-dark-gray/80 leading-relaxed font-sans font-light">
-                As an acclaimed, Delhi NCR based celebrity makeup artist and professional educator, Priya Chandra has built a sterling reputation for defining the absolute height of modern bridal luxury. Certified by the world's most prestigious training hubs including Lakmé Academy, Kryolan India, and CSA, Priya specializes in weightless high-definition bridal airbrushing, sleek red-carpet makeovers, and custom saree drapery.
+                As an acclaimed, Noida Delhi NCR based celebrity makeup artist and professional educator, Priya Chandra has built a sterling reputation for defining the absolute height of modern bridal luxury. Certified by the world's most prestigious training hubs including Lakmé Academy, Kryolan India, and CSA, Priya specializes in weightless high-definition bridal airbrushing, sleek red-carpet makeovers, and custom saree drapery.
               </p>
               <p className="text-xs sm:text-sm text-dark-gray/80 leading-relaxed font-sans font-light">
                 Her hallmark is personalized cosmetic architecture—studying your unique bone structure and skin chemistry to sculpt looks that radiate emotional warmth, stay flawless under demanding production strobe lights, and withstand 16 hours of emotional tears and joy.

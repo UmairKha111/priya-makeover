@@ -34,6 +34,7 @@ export interface GalleryItem {
 export interface BeforeAfterItem {
   id: string;
   title: string;
+  category: "bridal" | "engagement" | "party" | "reception"; // ✅ NEW
   beforeImage: string;
   afterImage: string;
   description: string;

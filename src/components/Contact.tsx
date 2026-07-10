@@ -326,7 +326,7 @@ export default function Contact() {
                       Our Studio Address
                     </h4>
                     <p className="text-xs text-deep-black mt-1 leading-relaxed font-sans font-light">
-                      Couture Suite 204, Elite Luxury Heights, Saket, Delhi NCR, India &bull; 110017
+                      Sector 41 Noida , Delhi NCR, India &bull; 201303
                     </p>
                   </div>
                 </li>

@@ -242,21 +242,51 @@ export const SERVICES_DATA: ServiceItem[] = [
   }
 ];
 
+
+// Category field add kiya — bridal, engagement, party, reception
+ 
 export const BEFORE_AFTER_DATA: BeforeAfterItem[] = [
   {
     id: "ba1",
-    title: "Minimalist Royal Transformation",
+    title: "Royal Bridal Transformation",
+    category: "bridal",
     beforeImage: "https://i.ibb.co/V08DdSJP/8d61cd6e-9da4-4004-bdc4-1b6a7593c0d5.png",
-    afterImage: "https://i.ibb.co/NnHbxdjH/1febed8f-317b-4fa7-9097-2f5f4094e627.png" ,
+    afterImage: "https://i.ibb.co/NnHbxdjH/1febed8f-317b-4fa7-9097-2f5f4094e627.png",
     description: "Correcting uneven skin tones and emphasizing eye symmetry. Created a luminous, classic luxury pink look for a grand royal wedding."
   },
-   {
-    id: "ba1",
-    title: "Minimalist Royal Transformation",
+  {
+    id: "ba2",
+    title: "Minimalist Bridal Glow",
+    category: "bridal",
     beforeImage: "https://i.ibb.co/FqHGPqF7/IMG-6633.jpg",
-    afterImage: "https://i.ibb.co/20mvLg9T/Whats-App-Image-2026-07-07-at-4-21-58-PM.jpgg" ,
+    afterImage: "https://i.ibb.co/20mvLg9T/Whats-App-Image-2026-07-07-at-4-21-58-PM.jpgg",
     description: "Correcting uneven skin tones and emphasizing eye symmetry. Created a luminous, classic luxury pink look for a grand royal wedding."
-  }
+  },
+  // ➕ Engagement, Party, Reception ke liye yahan images add karo:
+  // {
+  //   id: "ba3",
+  //   title: "Golden Engagement Glow",
+  //   category: "engagement",
+  //   beforeImage: "YOUR_BEFORE_IMAGE_URL",
+  //   afterImage: "YOUR_AFTER_IMAGE_URL",
+  //   description: "Soft romantic engagement look with dewy glass skin finish."
+  // },
+  // {
+  //   id: "ba4",
+  //   title: "Cocktail Party Glam",
+  //   category: "party",
+  //   beforeImage: "YOUR_BEFORE_IMAGE_URL",
+  //   afterImage: "YOUR_AFTER_IMAGE_URL",
+  //   description: "High-impact party look with dramatic eyes and bold lips."
+  // },
+  // {
+  //   id: "ba5",
+  //   title: "Grand Reception Glamour",
+  //   category: "reception",
+  //   beforeImage: "YOUR_BEFORE_IMAGE_URL",
+  //   afterImage: "YOUR_AFTER_IMAGE_URL",
+  //   description: "Red carpet worthy reception look with sculpted contour."
+  // },
 ];
 
 export const TESTIMONIALS_DATA: TestimonialItem[] = [
