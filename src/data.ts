@@ -116,6 +116,12 @@ export const GALLERY_IMAGES: GalleryItem[] = [
   title: "Classic Red Lehenga Bridal Look",
   category: "bridal",
   image: "https://i.ibb.co/hxpQBcwv/IMG-4922-JPG.jpg" 
+},
+{
+  id: "g17",
+  title: "Bridal classic Look",
+  category: "bridal",
+  image: "https://scontent-del3-2.xx.fbcdn.net/v/t1.15752-9/752761043_1071033798930682_1724942368256193557_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=Gd8WCtt0AK4Q7kNvwG7zS5r&_nc_oc=Adr_06cJsLU4lVd6RT2LMa0b6t0kdZe1vSJxTrej8Tw6jfUZqkthPuZtrhtX2uZ_MwvNANTKjzeIL-vmM79ddv4-&_nc_zt=23&_nc_ht=scontent-del3-2.xx&_nc_ss=7b6a8&oh=03_Q7cD5wF9mxeFNdQkpnR_ftNq3DuXNaFj7UVe5IYFSCg-lR7X7w&oe=6A853282" 
 }
 ];
 
