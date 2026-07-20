@@ -268,6 +268,14 @@ export const BEFORE_AFTER_DATA: BeforeAfterItem[] = [
     afterImage: "https://i.ibb.co/20mvLg9T/Whats-App-Image-2026-07-07-at-4-21-58-PM.jpgg",
     description: "Correcting uneven skin tones and emphasizing eye symmetry. Created a luminous, classic luxury pink look for a grand royal wedding."
   },
+  {
+    id: "ba2",
+    title: "Minimalist Bridal Glow",
+    category: "bridal",
+    beforeImage: "https://i.ibb.co/0jDqYgsk/IMG-7150.jpg",
+    afterImage: "https://scontent-del2-3.xx.fbcdn.net/v/t1.15752-9/751764518_1552155502953623_7882342407762179834_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=101&ccb=1-7&_nc_sid=9f807c&_nc_ohc=QOztzpgcqbUQ7kNvwFp4pgM&_nc_oc=AdpvMXFJwkoj5wKu4NiiywV5crb_owpyIUEehVi4GG0j92rjn0EVg3WJo_8rMrGretY6VxrpoTs3FoUeXoPYaAeZ&_nc_ad=z-m&_nc_cid=2034&_nc_zt=23&_nc_ht=scontent-del2-3.xx&_nc_ss=7a22e&oh=03_Q7cD5wFtXMJswf1ngrlCWq-3_xo82qdPa4M8gYJIiIkocNJNhQ&oe=6A854586",
+    description: "Correcting uneven skin tones and emphasizing eye symmetry. Created a luminous, classic luxury pink look for a grand royal wedding."
+  },
   // ➕ Engagement, Party, Reception ke liye yahan images add karo:
   // {
   //   id: "ba3",
