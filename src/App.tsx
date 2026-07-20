@@ -56,7 +56,7 @@ export default function App() {
                   <div className="relative aspect-[3/4] overflow-hidden shadow-xl bg-white">
                     <img
                       src={IMAGES.portrait}
-                      alt="Maithili Gosavi Masterclass"
+                      alt="Priyachandra"
                       referrerPolicy="no-referrer"
                       className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-103"
                     />

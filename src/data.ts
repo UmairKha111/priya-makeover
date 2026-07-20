@@ -8,7 +8,7 @@ import { ServiceItem, TestimonialItem, GalleryItem, BeforeAfterItem, FAQItem, Pr
 // Import our beautifully generated local assets statically so Vite builds and deploys them robustly
 import heroImg from "./assets/images/luxury_bride_hero_1782799649213.jpg";
 import flatlayImg from "./assets/images/makeup_artistry_detail_1782799666308.jpg";
-import portraitImg from "./assets/images/about_portrait_1782799681075.jpg";
+import portraitImg from "./assets/images/about_portrait_1782799681075.jpg.png";
 import editorialImg from "./assets/images/editorial_fashion_makeup_1782799693410.jpg";
 
 export const IMAGES = {
