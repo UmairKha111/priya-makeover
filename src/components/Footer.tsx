@@ -140,16 +140,78 @@ export default function Footer({ onPageChange }: FooterProps) {
 
       </div>
 
-      {/* Sub-footer copyright info */}
-      <div className="max-w-7xl mx-auto px-6 sm:px-12 mt-16 pt-8 border-t border-luxury-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left relative z-10">
-        <p className="text-[10px] text-luxury-white/40 tracking-wider font-sans">
-          &copy; {new Date().getFullYear()} Priya Chandra Makeovers &amp; Academy. All Rights Reserved.
-        </p>
-        <p className="text-[10px] text-vibrant-pink/60 tracking-wider font-sans uppercase font-semibold">
-          Certified by Lakmé Academy &bull; Kryolan &bull; CSA
-        </p>
-      </div>
+    {/* Luxury Bottom Footer */}
+<div className="max-w-7xl mx-auto px-6 sm:px-12 mt-16 pt-10 border-t border-vibrant-pink/10 relative z-10">
 
+  <div className="flex flex-col items-center justify-center text-center space-y-4">
+
+    {/* Copyright */}
+    <p className="text-[11px] tracking-[0.25em] uppercase text-luxury-white/45 font-light">
+      © {new Date().getFullYear()} Priya Chandra Makeovers &amp; Academy
+      <br className="sm:hidden" />
+      <span className="hidden sm:inline"> • </span>
+      All Rights Reserved
+    </p>
+
+    {/* Crafted By */}
+    <div className="flex items-center gap-3">
+      <div className="h-px w-12 bg-vibrant-pink/30"></div>
+
+      <p className="text-[11px] tracking-[0.35em] uppercase text-luxury-white/60">
+        Crafted by
+      </p>
+
+      <div className="h-px w-12 bg-vibrant-pink/30"></div>
+    </div>
+
+    <a
+      href="https://umanztechnology.in"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-lg font-serif-luxury text-vibrant-pink hover:text-luxury-pink transition-all duration-300 tracking-[0.15em]"
+    >
+      UMANZ TECHNOLOGY
+    </a>
+
+    {/* Links */}
+    <div className="flex flex-wrap items-center justify-center gap-4 text-[11px] text-luxury-white/50">
+
+      <a
+        href="https://umanztechnology.in"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-vibrant-pink transition-colors"
+      >
+        umanztechnology.in
+      </a>
+
+      <span className="text-vibrant-pink/40">•</span>
+
+      <a
+        href="https://www.instagram.com/umanztechnology/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-vibrant-pink transition-colors"
+      >
+       @umanztechnology
+      </a>
+
+      <span className="text-vibrant-pink/40">•</span>
+
+      <a
+        href="https://wa.me/916391157751"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-vibrant-pink transition-colors"
+      >
+        +91 63911 57751
+      </a>
+
+    </div>
+
+  </div>
+
+</div>
     </footer>
   );
 }
