@@ -125,7 +125,7 @@ export const GALLERY_IMAGES: GalleryItem[] = [
 },
 {
   id: "g18",
-  title: "glamour pink Glow Engagement look",
+  title: "Glamour Pink Glow Engagement Look",
   category: "engagement",
   image: "https://scontent-del3-2.xx.fbcdn.net/v/t1.15752-9/753646183_2170211430494869_4933803419376786246_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_ohc=FF-2uJ5LcGEQ7kNvwF21bXc&_nc_oc=Ado0wsDbttaaTKDeAIOVgufGObUZ7hT8sW7wuj8HYhr7iG02ImlO5CEGAXpfYEAp1y-zju7wnbyZbK5FnmVWDmKd&_nc_zt=23&_nc_ht=scontent-del3-2.xx&_nc_ss=7b6a8&oh=03_Q7cD5wGdIIad_yWIKPYz4HRGACxAwyos2k8oeeyVCAYizeYL2w&oe=6A8A9AF8" 
 },
