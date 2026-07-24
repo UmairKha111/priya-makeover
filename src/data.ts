@@ -122,7 +122,13 @@ export const GALLERY_IMAGES: GalleryItem[] = [
   title: "Bridal classic Look",
   category: "bridal",
   image: "https://scontent-del3-2.xx.fbcdn.net/v/t1.15752-9/752761043_1071033798930682_1724942368256193557_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=Gd8WCtt0AK4Q7kNvwG7zS5r&_nc_oc=Adr_06cJsLU4lVd6RT2LMa0b6t0kdZe1vSJxTrej8Tw6jfUZqkthPuZtrhtX2uZ_MwvNANTKjzeIL-vmM79ddv4-&_nc_zt=23&_nc_ht=scontent-del3-2.xx&_nc_ss=7b6a8&oh=03_Q7cD5wF9mxeFNdQkpnR_ftNq3DuXNaFj7UVe5IYFSCg-lR7X7w&oe=6A853282" 
-}
+},
+{
+  id: "g18",
+  title: "glamour pink Glow Engagement look",
+  category: "engagement",
+  image: "https://scontent-del3-2.xx.fbcdn.net/v/t1.15752-9/753646183_2170211430494869_4933803419376786246_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_ohc=FF-2uJ5LcGEQ7kNvwF21bXc&_nc_oc=Ado0wsDbttaaTKDeAIOVgufGObUZ7hT8sW7wuj8HYhr7iG02ImlO5CEGAXpfYEAp1y-zju7wnbyZbK5FnmVWDmKd&_nc_zt=23&_nc_ht=scontent-del3-2.xx&_nc_ss=7b6a8&oh=03_Q7cD5wGdIIad_yWIKPYz4HRGACxAwyos2k8oeeyVCAYizeYL2w&oe=6A8A9AF8" 
+},
 ];
 
 export const SERVICES_DATA: ServiceItem[] = [
