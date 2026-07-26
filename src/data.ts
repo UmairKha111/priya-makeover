@@ -91,7 +91,7 @@ export const GALLERY_IMAGES: GalleryItem[] = [
   id: "g12",
   title: "Elegant Cocktail Party Makeup",
   category: "party",
-  image: "https://i.ibb.co/HLvynM4N/39def8e4-1a9a-40d0-a65c-c29b423608b1.png"
+  image: "https://i.ibb.co/70tRm6h/image.png"
 },
 {
   id: "g13",
@@ -128,6 +128,24 @@ export const GALLERY_IMAGES: GalleryItem[] = [
   title: "Glamour Pink Glow Engagement Look",
   category: "engagement",
   image: "https://scontent-del3-2.xx.fbcdn.net/v/t1.15752-9/753646183_2170211430494869_4933803419376786246_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_ohc=FF-2uJ5LcGEQ7kNvwF21bXc&_nc_oc=Ado0wsDbttaaTKDeAIOVgufGObUZ7hT8sW7wuj8HYhr7iG02ImlO5CEGAXpfYEAp1y-zju7wnbyZbK5FnmVWDmKd&_nc_zt=23&_nc_ht=scontent-del3-2.xx&_nc_ss=7b6a8&oh=03_Q7cD5wGdIIad_yWIKPYz4HRGACxAwyos2k8oeeyVCAYizeYL2w&oe=6A8A9AF8" 
+},
+{
+  id: "g19",
+  title: "Traditional Muslim bridal look",
+  category: "bridal",
+  image: "https://i.ibb.co/5XQpRzBb/image.png" 
+},
+{
+  id: "g20",
+  title: "Night party glow ",
+  category: "party",
+  image: "https://i.ibb.co/HDxQqqZ6/image.png" 
+},
+{
+  id: "g21",
+  title: "Charming reception glow",
+  category: "reception",
+  image: "https://scontent-del3-2.xx.fbcdn.net/v/t1.15752-9/753224888_1593473202199333_1860311292031520724_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_ohc=s-7e8FoXyyUQ7kNvwFwiA-_&_nc_oc=AdpnwAQWZq68Jb3yuCj4oM5s6nuRVHJ3JkfPCWvrjwmt8YQ6EaLMI1ByzBTbsvNR4aiCnuVeXSdrDx17RMQ2G6bG&_nc_zt=23&_nc_ht=scontent-del3-2.xx&_nc_ss=7b6a8&oh=03_Q7cD5wGcBdZIxY_uXhbyqwMxYS2O46U8O9rweNN3JR-Qg2szig&oe=6A8D6220" 
 },
 ];
 
