@@ -196,7 +196,7 @@ export const SERVICES_DATA: ServiceItem[] = [
       "Photogenic contouring for daytime lighting"
     ],
     included: [
-      "Hydrating skin prep session",
+      "Hydrating skin prep sessions",
       "Premium HD base with luxury pink highlight accents",
       "Custom dynamic eye makeup and lash definition",
       "Lip stain blending and gloss application"
