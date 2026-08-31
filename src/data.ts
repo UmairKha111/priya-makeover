@@ -21,6 +21,25 @@ export const IMAGES = {
 // Additional curated high-end beauty images from public sources to ensure rich, non-mocked variety
 export const GALLERY_IMAGES: GalleryItem[] = [
   {
+    id: "g24",
+    title: "The Bride",
+    category: "bridal",
+    image: "https://scontent.flko2-1.fna.fbcdn.net/v/t1.15752-9/787666114_1085430613830714_2888076527853041768_n.jpg?_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=Wj4X-aYc7OsQ7kNvwGsugcY&_nc_oc=AdoPm82tcJB3-wdtqUrKyLqfUEaN6Lc6-Gv9fg-MKYx1WwrcybiH7SvIDccJ4mRHzFPTf3vWdoWLMlAc8dQr9b46&_nc_zt=23&_nc_ht=scontent.flko2-1.fna&_nc_ss=7b6a8&oh=03_Q7cD6QEHRHDJmRYAIru3q1svgIX5YWy46Bd3LLFLEhAPDxxFrg&oe=6ABC9D55"
+  },
+  {
+    id: "g23",
+    title: "Beautyfull lovely bride",
+    category: "bridal",
+    image: "https://scontent.flko2-1.fna.fbcdn.net/v/t1.15752-9/783011996_1089563840229474_1320366287519663970_n.jpg?_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=u-46OwCWsxYQ7kNvwG4p9LP&_nc_oc=AdpfD8f5jrmiScr9ZRq27HvqotiY5B0ab0RhN7f0cW-kgA0d1TDe3ohRXLNcW6SUMo8wOwSryhQrJoWDSNqnfQnX&_nc_zt=23&_nc_ht=scontent.flko2-1.fna&_nc_ss=7b6a8&oh=03_Q7cD6QGv2wIR_6RUkNjpEgGBcbzJjP65H5u_Vj4pqLre5fiQQA&oe=6ABC71DD"
+  },
+  
+  {
+    id: "g22",
+    title: "glamour beauty",
+    category: "bridal",
+    image: "https://scontent.flko2-1.fna.fbcdn.net/v/t1.15752-9/783027808_1073407348955639_1686943357907504502_n.jpg?_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=HTb0dAg1hzwQ7kNvwHddkef&_nc_oc=Adp8KMgS4WpSeJNSqqQCnN40XE2V0a40g6974aMl7CVLBQKRmshpF0k9GAI_dIc-HAVyJXpa58BCri3ojM30gcSJ&_nc_zt=23&_nc_ht=scontent.flko2-1.fna&_nc_ss=7b6a8&oh=03_Q7cD6QGVMVjWMbj5Om9GB4FhGQexQYvVNVLAr-fOKCI7JMiydw&oe=6ABC78BA"
+  },
+  {
     id: "g1",
     title: "The Regal Marwari Bride",
     category: "bridal",
@@ -117,17 +136,12 @@ export const GALLERY_IMAGES: GalleryItem[] = [
   category: "bridal",
   image: "https://i.ibb.co/hxpQBcwv/IMG-4922-JPG.jpg" 
 },
-{
-  id: "g17",
-  title: "Bridal classic Look",
-  category: "bridal",
-  image: "https://scontent-del3-2.xx.fbcdn.net/v/t1.15752-9/752761043_1071033798930682_1724942368256193557_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=Gd8WCtt0AK4Q7kNvwG7zS5r&_nc_oc=Adr_06cJsLU4lVd6RT2LMa0b6t0kdZe1vSJxTrej8Tw6jfUZqkthPuZtrhtX2uZ_MwvNANTKjzeIL-vmM79ddv4-&_nc_zt=23&_nc_ht=scontent-del3-2.xx&_nc_ss=7b6a8&oh=03_Q7cD5wF9mxeFNdQkpnR_ftNq3DuXNaFj7UVe5IYFSCg-lR7X7w&oe=6A853282" 
-},
+
 {
   id: "g18",
   title: "Glamour Pink Glow Engagement Look",
   category: "engagement",
-  image: "https://scontent-del3-2.xx.fbcdn.net/v/t1.15752-9/753646183_2170211430494869_4933803419376786246_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_ohc=FF-2uJ5LcGEQ7kNvwF21bXc&_nc_oc=Ado0wsDbttaaTKDeAIOVgufGObUZ7hT8sW7wuj8HYhr7iG02ImlO5CEGAXpfYEAp1y-zju7wnbyZbK5FnmVWDmKd&_nc_zt=23&_nc_ht=scontent-del3-2.xx&_nc_ss=7b6a8&oh=03_Q7cD5wGdIIad_yWIKPYz4HRGACxAwyos2k8oeeyVCAYizeYL2w&oe=6A8A9AF8" 
+  image: "https://i.ibb.co/G492shyW/IMG-6132-JPG.jpg" 
 },
 {
   id: "g19",
@@ -145,7 +159,7 @@ export const GALLERY_IMAGES: GalleryItem[] = [
   id: "g21",
   title: "Charming reception glow",
   category: "reception",
-  image: "https://scontent-del3-2.xx.fbcdn.net/v/t1.15752-9/753224888_1593473202199333_1860311292031520724_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_ohc=s-7e8FoXyyUQ7kNvwFwiA-_&_nc_oc=AdpnwAQWZq68Jb3yuCj4oM5s6nuRVHJ3JkfPCWvrjwmt8YQ6EaLMI1ByzBTbsvNR4aiCnuVeXSdrDx17RMQ2G6bG&_nc_zt=23&_nc_ht=scontent-del3-2.xx&_nc_ss=7b6a8&oh=03_Q7cD5wGcBdZIxY_uXhbyqwMxYS2O46U8O9rweNN3JR-Qg2szig&oe=6A8D6220" 
+  image: "https://i.ibb.co/tMWSjtcw/IMG-5550-JPG.jpg" 
 },
 ];
 
