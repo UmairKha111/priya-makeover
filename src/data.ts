@@ -21,6 +21,12 @@ export const IMAGES = {
 // Additional curated high-end beauty images from public sources to ensure rich, non-mocked variety
 export const GALLERY_IMAGES: GalleryItem[] = [
   {
+  id: "g25",
+  title: "Clean and Profesnol bridal work",
+  category: "bridal",
+  image: "https://i.ibb.co/7tcxtfkj/IMG-8962-JPG.jpg"  
+},
+  {
     id: "g24",
     title: "The Bride",
     category: "bridal",
@@ -161,12 +167,8 @@ export const GALLERY_IMAGES: GalleryItem[] = [
   category: "reception",
   image: "https://i.ibb.co/tMWSjtcw/IMG-5550-JPG.jpg" 
 },
-{
-  id: "g22",
-  title: "Clean and Profesnol bridal work",
-  category: "bridal",
-  image: "https://i.ibb.co/7tcxtfkj/IMG-8962-JPG.jpg"  
-},
+
+
 ];
 
 export const SERVICES_DATA: ServiceItem[] = [
