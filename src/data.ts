@@ -161,6 +161,12 @@ export const GALLERY_IMAGES: GalleryItem[] = [
   category: "reception",
   image: "https://i.ibb.co/tMWSjtcw/IMG-5550-JPG.jpg" 
 },
+{
+  id: "g22",
+  title: "Charming reception glow",
+  category: "reception",
+  image: "https://i.ibb.co/7tcxtfkj/IMG-8962-JPG.jpg"  
+},
 ];
 
 export const SERVICES_DATA: ServiceItem[] = [
