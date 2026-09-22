@@ -163,8 +163,8 @@ export const GALLERY_IMAGES: GalleryItem[] = [
 },
 {
   id: "g22",
-  title: "Charming reception glow",
-  category: "reception",
+  title: "Clean and Profesnol bridal work",
+  category: "bridal",
   image: "https://i.ibb.co/7tcxtfkj/IMG-8962-JPG.jpg"  
 },
 ];
