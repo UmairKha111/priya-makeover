@@ -26,25 +26,7 @@ export const GALLERY_IMAGES: GalleryItem[] = [
   category: "bridal",
   image: "https://i.ibb.co/7tcxtfkj/IMG-8962-JPG.jpg"  
 },
-  {
-    id: "g24",
-    title: "The Bride",
-    category: "bridal",
-    image: "https://scontent.flko2-1.fna.fbcdn.net/v/t1.15752-9/787666114_1085430613830714_2888076527853041768_n.jpg?_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=Wj4X-aYc7OsQ7kNvwGsugcY&_nc_oc=AdoPm82tcJB3-wdtqUrKyLqfUEaN6Lc6-Gv9fg-MKYx1WwrcybiH7SvIDccJ4mRHzFPTf3vWdoWLMlAc8dQr9b46&_nc_zt=23&_nc_ht=scontent.flko2-1.fna&_nc_ss=7b6a8&oh=03_Q7cD6QEHRHDJmRYAIru3q1svgIX5YWy46Bd3LLFLEhAPDxxFrg&oe=6ABC9D55"
-  },
-  {
-    id: "g23",
-    title: "Beautyfull lovely bride",
-    category: "bridal",
-    image: "https://scontent.flko2-1.fna.fbcdn.net/v/t1.15752-9/783011996_1089563840229474_1320366287519663970_n.jpg?_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=u-46OwCWsxYQ7kNvwG4p9LP&_nc_oc=AdpfD8f5jrmiScr9ZRq27HvqotiY5B0ab0RhN7f0cW-kgA0d1TDe3ohRXLNcW6SUMo8wOwSryhQrJoWDSNqnfQnX&_nc_zt=23&_nc_ht=scontent.flko2-1.fna&_nc_ss=7b6a8&oh=03_Q7cD6QGv2wIR_6RUkNjpEgGBcbzJjP65H5u_Vj4pqLre5fiQQA&oe=6ABC71DD"
-  },
-  
-  {
-    id: "g22",
-    title: "glamour beauty",
-    category: "bridal",
-    image: "https://scontent.flko2-1.fna.fbcdn.net/v/t1.15752-9/783027808_1073407348955639_1686943357907504502_n.jpg?_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=HTb0dAg1hzwQ7kNvwHddkef&_nc_oc=Adp8KMgS4WpSeJNSqqQCnN40XE2V0a40g6974aMl7CVLBQKRmshpF0k9GAI_dIc-HAVyJXpa58BCri3ojM30gcSJ&_nc_zt=23&_nc_ht=scontent.flko2-1.fna&_nc_ss=7b6a8&oh=03_Q7cD6QGVMVjWMbj5Om9GB4FhGQexQYvVNVLAr-fOKCI7JMiydw&oe=6ABC78BA"
-  },
+ 
   {
     id: "g1",
     title: "The Regal Marwari Bride",
